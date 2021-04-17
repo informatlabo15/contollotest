@@ -1,0 +1,22 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row" *ngIf="jobs">
+            <ng-container *ngFor="let job of jobs">
+                <div class="col-lg-3 col-md-6 col-sm-6 py-2">
+                    <mat-card>
+                        <mat-card-header >
+                            <mat-card-title class="w-100 text-center pb-3 f-15">{{job.company}} </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content class="text-center">
+                            <img mat-card-image class="img-fluid rounded" src="{{job.image}}"
+                                alt="{{job.jobPosition}}">
+                        </mat-card-content>
+                        <mat-card-footer class="text-center m-0">
+                            {{job.jobPosition}}
+                        </mat-card-footer>
+                    </mat-card>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

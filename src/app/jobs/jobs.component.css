@@ -1,0 +1,23 @@
+.card [class*=card-header-] .card-icon, .card [class*=card-header-] .card-text {
+    border-radius: 3px;
+    background-color: #a8a8a8;
+    padding: 2px;
+    margin-top: 20px;
+    margin-right: 0px;
+    /* float: left; */
+}
+
+
+::ng-deep .mat-card-header-text{
+    width: 100%;
+}
+
+::ng-deep   .mat-card-header .mat-card-title {
+    font-size: 15px;
+}
+
+::ng-deep .mat-card-footer{
+    width: 100%;
+    margin: 0;
+}
+

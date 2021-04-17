@@ -1,0 +1,28 @@
+<footer class="footer ">
+    <div class="container-fluid">
+        <nav class="pull-left">
+            <ul>
+                <li>
+                    <a [routerLink]="['/jobs']" routerLinkActive="router-link-active" >
+                        Jobs
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/people']" routerLinkActive="router-link-active" >
+                        People
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/about']" routerLinkActive="router-link-active" >
+                        About
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright pull-right">
+            &copy;
+            {{test | date: 'yyyy'}} Creado por
+            <span>Francisco Martínez</span>
+        </div>
+    </div>
+</footer>
